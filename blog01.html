@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap website layout</title>
+  <!-- Bootstap 5.0.0-->
+  <link rel="stylesheet" href="../res/bootstrap@5.0.0-alpha2.min.css">
+  <link rel="stylesheet" href="../res/chartist.min.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- for mediaQuarries -->
+  <link rel="stylesheet" href="style/mediaQuarrie.css">
+  <!-- for Animation -->
+  <link rel="stylesheet" href="../style/animation.css">
+  <!-- for Mstyling -->
+  <link rel="stylesheet" href="../style/blog.css">
+</head>
+
+<body>
+  <header class="container-fluid header bg-white" style="overflow: hidden">
+    <div class="row my-2" style="height: 3rem;">
+      <div class="col-10 user-none">
+        <img src="../media/logo.jpeg" alt="refresh page" class="w-25 logo-img">
+      </div>
+      <!-- menu box -->
+      <div class="col-2 centerme">
+        <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!--- Menu bar (hidden)-->
+  <div class="menubar" id="blogmenubar">
+    <div class="menubar-inner bg-white" id="menubarInner">
+      <br> <br> <br> <br>
+      <a href="https://inytch.business.com" class="p-3 d-block">Home (CIC)</a>
+      <div class="s-box  mx-2 rounded glass">
+        <img src="../media/svgs/box.svg" class="p-2"> <br>
+        <div class="s-inner d-flex">
+          <div class="col s-mbox"></div>
+          <div class="col s-mbox"></div>
+          <div class="col s-mbox"></div>
+          <div class="col s-mbox"></div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <main>
+    <div class="container-fluid" style="background:"> <br><br>
+      <div class="row mt-5">
+        <!-- Main column one -->
+        <div class="col-md-12">
+          <div class="innerbox bg-white p-2 rounded-top">
+            <!-- Header Text -->
+            <h3 class="article-header" id="ArticleHeader">
+            </h3>
+            <!-- Update Text -->
+            <small class="article-update" id="ArticleUpdate">
+            </small>
+            <!-- paragraph Text -->
+            <p class="article-paragraph mt-5" id="ArticlePara"></p>
+            <div class="highlight bg-light p-3 rounded text-secondary">
+              <pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- CSS only --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</code></pre>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Related Image Text -->
+                <img alt="Refresh Page" class="w-100 rounded my-3" id="article-img">
+              </div>
+              <div class="col-md-6 centerme">
+                <!-- List text-->
+                <div class="list">
+                  <h5 class="mb-3" id="li-header">Why we use Bootstrap ?</h5>
+                  <ol class="article-ol">
+                    <li class="article-li" id="ar-li-0">It is Faster and Easier way for Web-Development.</li>
+                    <li class="article-li" id="ar-li-1">It creates Platform-independent web-pages.</li>
+                    <li class="article-li" id="ar-li-3">It creates Responsive Web-pages.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Steps -->
+            <!----Next------>
+          </div>
+          <hr>
+          <h5 class="mb-3">Select Layout</h5>
+          <div class="innerbox d-flex flex-wrap justify-content-center">
+            <div class="layout overflow-hidden">
+              <a href="https://gist.github.com/deepakvishwakarma-hh/aee4167c9cd0a47e5cf1656f7c9a43f3"><img src="../media/M.png" alt="Layout" class="w-100"></a>
+            </div>
+            <div class="layout overflow-hidden">
+              <a href="https://gist.github.com/deepakvishwakarma-hh/aee4167c9cd0a47e5cf1656f7c9a43f3"><img src="../media/M.png" alt="Layout" class="w-100"></a>
+            </div>
+            <div class="layout overflow-hidden">
+              <a href="https://gist.github.com/deepakvishwakarma-hh/aee4167c9cd0a47e5cf1656f7c9a43f3"><img src="../media/M.png" alt="Layout" class="w-100"></a>
+            </div>
+            <div class="layout overflow-hidden">
+              <a href="https://gist.github.com/deepakvishwakarma-hh/aee4167c9cd0a47e5cf1656f7c9a43f3"><img src="../media/M.png" alt="Layout" class="w-100"></a>
+            </div>
+            <div class="layout overflow-hidden">
+              <a href="https://gist.github.com/deepakvishwakarma-hh/aee4167c9cd0a47e5cf1656f7c9a43f3"><img src="../media/M.png" alt="Layout" class="w-100"></a>
+            </div>
+            <div class="layout overflow-hidden">
+              <a href="https://gist.github.com/deepakvishwakarma-hh/aee4167c9cd0a47e5cf1656f7c9a43f3"><img src="../media/M.png" alt="Layout" class="w-100"></a>
+            </div>
+          </div>
+        </div>
+  </main>
+  <script src="../javascript/Blog01.js"></script>
+</body>
+
+</html>
